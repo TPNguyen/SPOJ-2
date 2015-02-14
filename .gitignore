@@ -2,4 +2,5 @@
 !*.cpp
 !CMakeLists.txt
 !.gitignore
+!reuse/
 test.cpp
