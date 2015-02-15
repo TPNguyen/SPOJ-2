@@ -1,7 +1,7 @@
 set(
     ToRun
 # Here set program file you want work on:
-    MWPZ06H.cpp
+    test.cpp
 #
 #   input
     )
@@ -11,4 +11,5 @@ aux_source_directory(. SRC_LIST)
 # add_executable(${PROJECT_NAME} ${SRC_LIST})
 add_executable(${PROJECT_NAME} ${ToRun})
 configure_file(input input COPYONLY)
-add_library(list_all_files ${SRC_LIST})
+# add_library(list_all_files ${SRC_LIST})
+# SET_TARGET_PROPERTIES(list_all_files PROPERTIES EXCLUDE_FROM_DEFAULT_BUILD_DEBUG True)
